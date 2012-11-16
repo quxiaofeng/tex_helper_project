@@ -1,10 +1,10 @@
-# Fuction
+# 功能
 
-This command is used to generate a tex pattern file.
-The black spot is located in each line with same interval between lines.
-And it can be written with different config again and again to make more black spots.
+这个命令用来生成纹样文件。
 
-Currently the black spot is defined as "X", and and the white spot is defined as "blank".
+前景字符会根据指定起点(origin)，按照指定间隔(interval)分布在指定尺寸(size)的背景字符组成的大背景上。
+
+保存图像时，默认亮度模式是黑板模式，前景白背景黑。使用反转模式的时候，使用白纸模式，背景白前景黑。前景背景字符的定义与亮度定义是分开的，互不相关。
 
 # Options
 
@@ -17,7 +17,7 @@ Currently the black spot is defined as "X", and and the white spot is defined as
 + -x          --exchange-fb           :Exchange foreground and background
 + -a          --autogen               :Auto generate a batch of textiles
 
-Examples:
+# Examples
 
 ```batch
 texgenerator -f tex1.txt -i 3 -o 1 -s 16 -c 32 -r 64

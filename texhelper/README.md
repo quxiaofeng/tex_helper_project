@@ -1,5 +1,6 @@
-# Function
-Weave different tex pattern files into one file.
+# 功能
+
+将多个纹样编织到一起。
 
 # Options
 
